@@ -1,0 +1,53 @@
+2020-09-29 00:59:33,239 INFO o.a.j.u.JMeterUtils: Setting Locale to en_EN
+2020-09-29 00:59:33,555 INFO o.a.j.JMeter: Loading user properties from: user.properties
+2020-09-29 00:59:33,575 INFO o.a.j.JMeter: Loading system properties from: system.properties
+2020-09-29 00:59:33,587 INFO o.a.j.JMeter: Copyright (c) 1998-2020 The Apache Software Foundation
+2020-09-29 00:59:33,587 INFO o.a.j.JMeter: Version 5.3
+2020-09-29 00:59:33,587 INFO o.a.j.JMeter: java.version=1.8.0_77
+2020-09-29 00:59:33,587 INFO o.a.j.JMeter: java.vm.name=Java HotSpot(TM) Client VM
+2020-09-29 00:59:33,587 INFO o.a.j.JMeter: os.name=Windows 10
+2020-09-29 00:59:33,591 INFO o.a.j.JMeter: os.arch=x86
+2020-09-29 00:59:33,591 INFO o.a.j.JMeter: os.version=10.0
+2020-09-29 00:59:33,591 INFO o.a.j.JMeter: file.encoding=Cp1252
+2020-09-29 00:59:33,591 INFO o.a.j.JMeter: java.awt.headless=null
+2020-09-29 00:59:33,591 INFO o.a.j.JMeter: Max memory     =1073741824
+2020-09-29 00:59:33,591 INFO o.a.j.JMeter: Available Processors =4
+2020-09-29 00:59:33,763 INFO o.a.j.JMeter: Default Locale=English (EN)
+2020-09-29 00:59:33,763 INFO o.a.j.JMeter: JMeter  Locale=English (EN)
+2020-09-29 00:59:33,767 INFO o.a.j.JMeter: JMeterHome=C:\Users\3543\Desktop\apache-jmeter-5.3
+2020-09-29 00:59:33,767 INFO o.a.j.JMeter: user.dir  =C:\Users\3543\Desktop\apache-jmeter-5.3\bin
+2020-09-29 00:59:33,767 INFO o.a.j.JMeter: PWD       =C:\Users\3543\Desktop\apache-jmeter-5.3\bin
+2020-09-29 00:59:33,807 INFO o.a.j.JMeter: IP: 127.0.0.1 Name: DELL FullName: view-localhost
+2020-09-29 00:59:35,219 INFO o.a.j.JMeter: Setting LAF to: com.github.weisj.darklaf.DarkLaf:com.github.weisj.darklaf.theme.IntelliJTheme
+2020-09-29 00:59:37,232 INFO o.a.j.JMeter: Loaded icon properties from org/apache/jmeter/images/icon.properties
+2020-09-29 01:00:01,792 INFO o.j.r.JARSourceHTTP: Requesting https://jmeter-plugins.org/repo/?installID=windows_10-c199bb0176b31db2114d6988c3d39807-gui
+2020-09-29 01:00:04,688 WARN o.j.r.PluginManagerMenuItem: Failed to load plugin updates info
+java.net.UnknownHostException: jmeter-plugins.org
+	at java.net.Inet6AddressImpl.lookupAllHostAddr(Native Method) ~[?:1.8.0_77]
+	at java.net.InetAddress$2.lookupAllHostAddr(Unknown Source) ~[?:1.8.0_77]
+	at java.net.InetAddress.getAddressesFromNameService(Unknown Source) ~[?:1.8.0_77]
+	at java.net.InetAddress.getAllByName0(Unknown Source) ~[?:1.8.0_77]
+	at java.net.InetAddress.getAllByName(Unknown Source) ~[?:1.8.0_77]
+	at java.net.InetAddress.getAllByName(Unknown Source) ~[?:1.8.0_77]
+	at org.apache.http.impl.conn.SystemDefaultDnsResolver.resolve(SystemDefaultDnsResolver.java:45) ~[httpclient-4.5.12.jar:4.5.12]
+	at org.apache.http.impl.conn.DefaultClientConnectionOperator.resolveHostname(DefaultClientConnectionOperator.java:263) ~[httpclient-4.5.12.jar:4.5.12]
+	at org.apache.http.impl.conn.DefaultClientConnectionOperator.openConnection(DefaultClientConnectionOperator.java:162) ~[httpclient-4.5.12.jar:4.5.12]
+	at org.apache.http.impl.conn.ManagedClientConnectionImpl.open(ManagedClientConnectionImpl.java:326) ~[httpclient-4.5.12.jar:4.5.12]
+	at org.apache.http.impl.client.DefaultRequestDirector.tryConnect(DefaultRequestDirector.java:605) ~[httpclient-4.5.12.jar:4.5.12]
+	at org.apache.http.impl.client.DefaultRequestDirector.execute(DefaultRequestDirector.java:440) ~[httpclient-4.5.12.jar:4.5.12]
+	at org.apache.http.impl.client.AbstractHttpClient.doExecute(AbstractHttpClient.java:835) ~[httpclient-4.5.12.jar:4.5.12]
+	at org.apache.http.impl.client.CloseableHttpClient.execute(CloseableHttpClient.java:83) ~[httpclient-4.5.12.jar:4.5.12]
+	at org.apache.http.impl.client.CloseableHttpClient.execute(CloseableHttpClient.java:56) ~[httpclient-4.5.12.jar:4.5.12]
+	at org.jmeterplugins.repository.JARSourceHTTP.execute(JARSourceHTTP.java:499) ~[jmeter-plugins-manager-1.4.jar:?]
+	at org.jmeterplugins.repository.JARSourceHTTP.execute(JARSourceHTTP.java:494) ~[jmeter-plugins-manager-1.4.jar:?]
+	at org.jmeterplugins.repository.JARSourceHTTP.getJSON(JARSourceHTTP.java:152) ~[jmeter-plugins-manager-1.4.jar:?]
+	at org.jmeterplugins.repository.JARSourceHTTP.getRepositories(JARSourceHTTP.java:276) ~[jmeter-plugins-manager-1.4.jar:?]
+	at org.jmeterplugins.repository.JARSourceHTTP.getRepo(JARSourceHTTP.java:304) ~[jmeter-plugins-manager-1.4.jar:?]
+	at org.jmeterplugins.repository.PluginManager.load(PluginManager.java:71) ~[jmeter-plugins-manager-1.4.jar:?]
+	at org.jmeterplugins.repository.PluginManagerMenuItem$1.run(PluginManagerMenuItem.java:41) [jmeter-plugins-manager-1.4.jar:?]
+2020-09-29 01:00:05,168 INFO o.a.j.p.h.s.HTTPSamplerBase: Parser for text/html is org.apache.jmeter.protocol.http.parser.LagartoBasedHtmlParser
+2020-09-29 01:00:05,172 INFO o.a.j.p.h.s.HTTPSamplerBase: Parser for application/xhtml+xml is org.apache.jmeter.protocol.http.parser.LagartoBasedHtmlParser
+2020-09-29 01:00:05,172 INFO o.a.j.p.h.s.HTTPSamplerBase: Parser for application/xml is org.apache.jmeter.protocol.http.parser.LagartoBasedHtmlParser
+2020-09-29 01:00:05,172 INFO o.a.j.p.h.s.HTTPSamplerBase: Parser for text/xml is org.apache.jmeter.protocol.http.parser.LagartoBasedHtmlParser
+2020-09-29 01:00:05,172 INFO o.a.j.p.h.s.HTTPSamplerBase: Parser for text/vnd.wap.wml is org.apache.jmeter.protocol.http.parser.RegexpHTMLParser
+2020-09-29 01:00:05,172 INFO o.a.j.p.h.s.HTTPSamplerBase: Parser for text/css is org.apache.jmeter.protocol.http.parser.CssParser
